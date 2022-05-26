@@ -7,6 +7,13 @@ FamilyPeople::FamilyPeople()
 	this->wife = new Wife;
 	this->husband = new Husband;
 }
+FamilyPeople::FamilyPeople(Wife* a, Husband* b)
+{
+	this->husband = b;
+	this->wife = a;
+	this->Salary = 0;
+	this->OrtherIncome = 0;
+}
 float FamilyPeople::Sum_salary()
 {
 	return this->wife->getSalary() + this->husband->getSalary();

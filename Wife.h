@@ -1,15 +1,16 @@
 #pragma once
-class Husband
+class Wife
 {
 private:
 	float salary;
 	float ortherincome;
 public:
-	Husband();
+	Wife();
 	void setSalary(float salary);
 	void setortherincome(float o_income);
 	float getSalary();
 	float getOrtherIncome();
-	~Husband();
+	void input();
+	~Wife();
 };
 

@@ -15,10 +15,6 @@ void SavingAccount::setInterestRate(float rate)
 {
 	this->InterestRate = rate;
 }
-void SavingAccount::choose_option(int option)
-{
-	this->option = option;
-}
 float SavingAccount::findInterest()
 {
 	if (this->option == 1)	//kỳ hạn 6 tháng
@@ -29,6 +25,13 @@ float SavingAccount::findInterest()
 	{
 		return this->savingMoney * pow((1 + this->InterestRate), 12);
 	}
+}
+void SavingAccount::input()
+{
+	std::cout << "CHOOSE OPTION RATE: \n1.6 MONTH\n2. 12 MONTH\n";
+	std::cin >> this->option;
+	std::cout << "GET SAVING MONEY: ";
+	std::cin >> this->savingMoney;
 }
 
 SavingAccount::~SavingAccount()

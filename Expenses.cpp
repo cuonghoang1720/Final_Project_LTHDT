@@ -1,4 +1,5 @@
 #include "Expenses.h"
+#include<iostream>
 
 Expenses::Expenses()
 {
@@ -21,6 +22,15 @@ void Expenses::Set_orther(float orther)
 float Expenses::getExpenses()
 {
 	return this->Eating + this->ElectricWater + this->ortherExpenses;
+}
+void Expenses::INPUT_EXPENSES()
+{
+	std::cout << "MONEY OF EATING: ";
+	std::cin >> this->Eating;
+	std::cout << "MONEY OF ELECTRICS";
+	std::cin >> this->Eating;
+	std::cout << "MONEY OF ORTHER EXPENSES: ";
+	std::cin >> this->ortherExpenses;
 }
 Expenses::~Expenses()
 {

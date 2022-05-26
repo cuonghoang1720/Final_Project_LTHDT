@@ -1,4 +1,5 @@
 #include "Husband.h"
+#include<iostream>
 
 Husband::Husband()
 {
@@ -20,6 +21,13 @@ float Husband::getSalary()
 float Husband::getOrtherIncome()
 {
 	return this->ortherincome;
+}
+void Husband::input()
+{
+	std::cout << "INPUT YOUR SALARY: ";
+	std::cin >> this->salary;
+	std::cout << "SOME ORTHER INCOME: ";
+	std::cin >> this->ortherincome;
 }
 Husband::~Husband()
 {

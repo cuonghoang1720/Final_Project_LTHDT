@@ -10,8 +10,8 @@ private:
 	Husband* husband;
 public:
 	FamilyPeople();
+	FamilyPeople(Wife* a, Husband* b);
 	float Sum_salary();
 	float Sum_OrtherIncome();
 	~FamilyPeople();
 };
-

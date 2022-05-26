@@ -11,5 +11,6 @@ public:
 	void Set_ElectricWater(float elec_water);
 	void Set_orther(float orther);
 	float getExpenses();
+	void INPUT_EXPENSES();
 	~Expenses();
 };

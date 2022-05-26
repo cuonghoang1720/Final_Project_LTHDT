@@ -9,8 +9,8 @@ public:
 	SavingAccount();
 	void setSavingMoney(float money);
 	void setInterestRate(float rate);
-	void choose_option(int option);	
 	float findInterest();
+	void input();
 	~SavingAccount();
 };
 
