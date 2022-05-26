@@ -2,6 +2,7 @@
 
 Family::Family()
 {
+	this->money = 0;
 	this->expenses = new Expenses;
 	this->account = new SavingAccount;
 	this->debt1 = new Debt_1_Year;
@@ -11,6 +12,7 @@ Family::Family()
 
 Family::Family(Expenses* exp, Debt* debt1_, Debt* debt3_, SavingAccount* account_, FamilyPeople* fam_)
 {
+	this->money = 0;
 	this->account = account_;
 	this->debt1 = debt1_;
 	this->debt3 = debt3_;
@@ -34,6 +36,14 @@ float Family::Sum_Debt()
 float Family::Sum_Money()
 {
 	return this->familypeople->Sum_salary() + this->familypeople->Sum_OrtherIncome();
+}
+float Family::get_Sum_Ortherincome()
+{
+	return this->familypeople->Sum_OrtherIncome();
+}
+float Family::get_Sum_salary()
+{
+	return this->get_Sum_salary();
 }
 
 Family::~Family()

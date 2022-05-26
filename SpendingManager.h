@@ -1,4 +1,5 @@
 #pragma once
+#include<iostream>
 #include "Debt.h"
 #include"Debt_1_Year.h"
 #include"Debt_3_Years.h"
@@ -16,6 +17,7 @@ public:
 	SpendingManager();
 	SpendingManager(Family* a);
 	float extra_money();
+	void check();
 	~SpendingManager();
 };
 

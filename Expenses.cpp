@@ -27,7 +27,7 @@ void Expenses::INPUT_EXPENSES()
 {
 	std::cout << "MONEY OF EATING: ";
 	std::cin >> this->Eating;
-	std::cout << "MONEY OF ELECTRICS";
+	std::cout << "MONEY OF ELECTRICS: ";
 	std::cin >> this->Eating;
 	std::cout << "MONEY OF ORTHER EXPENSES: ";
 	std::cin >> this->ortherExpenses;

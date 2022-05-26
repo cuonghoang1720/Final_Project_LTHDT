@@ -4,7 +4,7 @@ class Debt_1_Year : public Debt
 {
 private:
 	float debt;	
-	float* rate;
+	float rate;
 	
 public:
 	Debt_1_Year();
